@@ -1,0 +1,134 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Center the App */
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header */
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Balance Section */
+h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.balance {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+/* Income & Expense Cards */
+.income-expense-container {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.income,
+.expense {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+}
+
+.income {
+  border-right: 2px solid #ddd;
+}
+
+.income p {
+  color: #2ecc71;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.expense p {
+  color: #e74c3c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Transaction List */
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.transaction {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border-right: 5px solid;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction.positive {
+  border-color: #2ecc71;
+}
+
+.transaction.negative {
+  border-color: #e74c3c;
+}
+
+/* Add Transaction Form */
+.add-transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input,
+button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+button:hover {
+  background: #2980b9;
+}
